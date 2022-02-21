@@ -1,5 +1,5 @@
 # Today I Learned
-Today I Learn ! 오늘 배운것을 매일 기록하기 위해 시작 합니다.
+Today I Learn ! 오늘 배운것을 매일 기록하기 위해 시작 합니다.    
 
 
 >  ### 조심하자!
