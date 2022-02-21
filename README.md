@@ -1,5 +1,6 @@
 # Today I Learned
 Today I Learn ! 오늘 배운것을 매일 기록하기 위해 시작 합니다.   
+당분간은 기존에 운영중이였던 티스토리 블로그(<https://nirsa.tistory.com/>)와 같이 포스팅하려 합니다. 
 
 #
 >  ### 조심하자!
