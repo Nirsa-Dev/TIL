@@ -1,11 +1,9 @@
 # Today I Learned
-***
 
-*single asterisks*
-_single underscores_
-**double asterisks**
-__double underscores__
-~~cancelline~~
+* 단순히 기간을 채우기 위함이 아닌, 공부하기 위해 진행한다는것을 명심하자.
+* 빠른 포스팅을 위해 다른 자료를 그대로 가져오거나, 복사+붙여넣기를 남발하지 말자.
+* 
+
 
 
 
