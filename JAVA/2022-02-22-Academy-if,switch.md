@@ -180,6 +180,64 @@ case 11 :
 default : System.out.println("해당하는 계절이 없습니다.");
 }
 ```
+
+> #### Q3. 연산 프로그램 만들기
+* 사용자로부터 피연산자1,2,연산자를 입력받아 계산을 출력해줍니다.
+* 음수는 "잘못 입력하셨습니다. 프로그램을 종료합니다."를 출력 합니다.
+
+```java
+Scanner sc = new Scanner(System.in);
+		
+System.out.println("피연산자1 입력 : ");
+Double num1 = sc.nextDouble();
+
+System.out.println("피연산자2 입력 : ");
+Double num2 = sc.nextDouble();
+
+sc.nextLine();
+		
+System.out.println("연산자를 입력(+,-,*,/,%) : ");
+String op = sc.nextLine();
+		
+// if문
+if(num1>0 && num2>0) {
+if(op.equals("+")) {
+		System.out.printf("%f %s %f = %f", num1, op, num2, num1+num2);
+	} else if(op.equals("-")) {
+		System.out.printf("%f %s %f = %f", num1, op, num2, num1-num2);
+	} else if(op.equals("*")) {
+		System.out.printf("%f %s %f = %f", num1, op, num2, num1*num2);
+	} else if(op.equals("/")) {
+		System.out.printf("%f %s %f = %f", num1, op, num2, num1/num2);
+	} else if(op.equals("%")) {
+		System.out.printf("%f %s %f = %f", num1, op, num2, num1%num2);
+	} else {
+		System.out.println("잘못 입력하셨습니다. 프로그램을 종료합니다.");
+	}
+} else {
+	System.out.println("잘못 입력하셨습니다. 프로그램을 종료합니다.");
+}
+
+  // switch문
+//if(num1>0 && num2>0) {
+//	switch(op) {
+//	case "+" : 
+//		System.out.printf("%f %s %f = %f", num1, op, num2, num1+num2); break;
+//	case "-" : 
+//		System.out.printf("%f %s %f = %f", num1, op, num2, num1-num2); break;
+//	case "*" : 
+//		System.out.printf("%f %s %f = %f", num1, op, num2, num1*num2); break;
+//	case "/" : 
+//		System.out.printf("%f %s %f = %f", num1, op, num2, num1/num2); break;
+//	case "%" : 
+//		System.out.printf("%f %s %f = %f", num1, op, num2, num1%num2); break;
+//	default : 
+//		System.out.println("잘못 입력하셨습니다. 프로그램을 종료합니다.");
+//	}
+//}
+```
+
+
 #
 > ### switch문과 if문의 차이점
 1. if : 조건식을 복잡하게 기술 가능, 값의 범위를 설정 가능
