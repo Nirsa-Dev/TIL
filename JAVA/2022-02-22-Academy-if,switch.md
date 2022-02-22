@@ -115,6 +115,42 @@ default : System.out.println("판매하고 있는 과일이 입니다");
 System.out.printf("%s의 가격은 %d원 입니다.", fruit, price);
 ```
 
+> #### Q. 사용자에게 월을 입력 받고 계절을 출력하세요. 
+* 12 ~ 2 : 겨울
+* 3 ~ 5 : 봄
+* 6 ~ 8 : 여름
+* 9 ~ 11 : 가을
+* 그 외 다른 입력 시 "해당하는 계절이 없습니다"를 출력
+```java
+Scanner sc = new Scanner(System.in);
+System.out.println("월을 입력 해주세요 : ");
+int month = sc.nextInt();
+		
+switch(month) {
+case 12 :
+case 1 :
+case 2 :
+	System.out.println("겨울");
+	break;
+case 3 :
+case 4 :
+case 5 :
+	System.out.println("봄");
+	break;
+case 6 :
+case 7 :
+case 8 :
+	System.out.println("가을");
+	break;
+case 9 :
+case 10 :
+case 11 :
+	System.out.println("가을");
+	break;
+default : System.out.println("해당하는 계절이 없습니다.");
+}
+```
+
 > ### switch문과 if문의 차이점
 1. if : 조건식을 복잡하게 기술 가능, 값의 범위를 설정 가능
 2. switch : 조건식 불가, 확실한 값만 기술 가능 (동등 비교만 수행)
