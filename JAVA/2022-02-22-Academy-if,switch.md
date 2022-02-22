@@ -233,7 +233,8 @@ if(op.equals("+")) {
 //		System.out.printf("%f %s %f = %f", num1, op, num2, num1%num2); break;
 //	default : 
 //		System.out.println("잘못 입력하셨습니다. 프로그램을 종료합니다.");
-//	}
+//	} else {
+//		System.out.println("잘못 입력하셨습니다. 프로그램을 종료합니다.");
 //}
 ```
 
