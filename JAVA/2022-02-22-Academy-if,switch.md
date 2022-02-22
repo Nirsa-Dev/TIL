@@ -19,7 +19,7 @@ if(조건식1) {
   수행될 문장;
 }
 ```
-   
+    
 > #### Q1. 나이를 입력받고 어린이, 청소년, 성인을 판단하기 (실습)
 * 아래 코드 작성 시 import, class, method 제외
 * 0~13 어린이
@@ -43,7 +43,7 @@ else {
 	}
 }
 ```
-
+   
 > #### Q2. 국영수 점수를 입력받고 과목40점 이하와 평균 60점 이하는 불합격, 초과는 합격 처리 하세요.
 ```java
 Scanner sc = new Scanner(System.in);
@@ -70,6 +70,35 @@ if((kor<=40 || eng<=40 || mat<=40) || (avg<=60)) {
 	System.out.println("축하합니다, 합격입니다!");
 } 
 ```
+   
+> #### Q3. 간단한 로그인 기능을 만들어 보세요.
+* 기존 등록되어있는 ID : user
+* 기존 등록되어있는 PW : 1234
+* ID와 PW를 입력받고 기존 등록되어있는 ID, PW와 비교하여 둘 다 동일하면 "로그인 성공", ID가 틀리면 "ID가 틀렸습니다.", PW가 틀리면 "PW가 틀렸습니다"를 출력하세요.
+```java
+Scanner sc = new Scanner(System.in);
+		
+System.out.println("아이디 입력 : ");
+String userId = sc.nextLine();
+
+System.out.println("비밀번호 입력 : ");
+String userPw = sc.nextLine();
+		
+// 데이터베이스에 등록되어 있는 아이디와 비밀번호 (회원가입이 되어있는 회원정보)
+String id = "user";
+String pw = "user11";
+		
+if(userId.equals(id) && userPw.equals(pw)) {
+	System.out.println(id+"님 로그인 성공");
+} else {
+	System.out.println("로그인 실패");
+	if(!userId.equals(id)) {
+		System.out.println("ID가 틀렸습니다.");
+	} else if (!userPw.equals(pw)) {
+		System.out.println("PW가 틀렸습니다.");
+	}
+}
+```
 
 #
 > ### swtich문
@@ -87,12 +116,13 @@ default:
   수행될 문장;
 }
 ```
+   
 > #### Q1. 사용자에게 구마핼 과일의 이름을 입력받아 각 과일의 가격을 출력할 것
 * 아래 코드 작성 시 import, class, method 제외
 * 사과 1000원
 * 오렌지 2000원
 * 망고 5000원
-
+   
 ```java
 Scanner sc = new Scanner(System.in);
 System.out.println("구매할 과일을 입력하세요 (사과, 오렌지, 망고)");
@@ -114,7 +144,7 @@ default : System.out.println("판매하고 있는 과일이 입니다");
 
 System.out.printf("%s의 가격은 %d원 입니다.", fruit, price);
 ```
-
+   
 > #### Q2. 사용자에게 월을 입력 받고 계절을 출력하세요. 
 * 12 ~ 2 : 겨울
 * 3 ~ 5 : 봄
@@ -150,7 +180,7 @@ case 11 :
 default : System.out.println("해당하는 계절이 없습니다.");
 }
 ```
-
+#
 > ### switch문과 if문의 차이점
 1. if : 조건식을 복잡하게 기술 가능, 값의 범위를 설정 가능
 2. switch : 조건식 불가, 확실한 값만 기술 가능 (동등 비교만 수행)
